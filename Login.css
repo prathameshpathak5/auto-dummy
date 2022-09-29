@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.page{
+    height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.cover{
+    background-color: white;
+    width: 25em;
+    height: 25em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around ;
+
+}
+.alt-login{
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alt-login div{
+    width: 45%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color:  ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+.google{
+    background-image: url("../Components/icons/google.png");
+}
+input{
+    border: none;
+    background-color: rgb(229,226,226);
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+}
+input:focus{
+    outline-color: rgb(32,177,255);
+}
+button#bt {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background:blue;
+    cursor: pointer;
+}
+.Login-btn:hover{
+    transform: scale(1.25);
+}
+.text{
+    position: relative;
+    bottom: 0em;
+}
+.Login .loginContainer {
+    padding: 60px;
+    margin: auto;
+    width: 100%;
+    max-width: 520px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(ellipse at left bottom,
+            rgba(22, 24, 47, 1) 0%,
+            rgba(38, 20, 72, 0.9) 59%,
+            rgba(17, 27, 75, 0.9) 100%);
+    box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.Login .loginContainer label {
+    color: white;
+    margin: 14px 0;
+    display: block;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.Login .loginContainer input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.Login .loginContainer .btnContainer {
+    width: 100%;
+    padding: 24px 0;
+}
+
+.Login .loginContainer .btnContainer p {
+    margin: 14px 0 0 0;
+    text-align: right;
+    color: #fff;
+}
+
+.Login .loginContainer .btnContainer p span {
+    color: yellow;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.Login .loginContainer .btnContainer p span:hover {
+    color: red;
+}
+
+.Login .loginContainer .errorMsg {
+    color: red;
+    font-size: 16px;
+}
