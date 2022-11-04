@@ -1,6 +1,7 @@
-import { Divider } from "@mui/material";
-import React, { Component } from "react";
+import Divider from "@mui/material/Divider";
+import React from "react";
 import "./Login.css";
+import Social from "./smedia/Social";
 const Login = (props) => {
   const {
     email,
@@ -18,13 +19,15 @@ const Login = (props) => {
     <div className="page">
       <div className="cover">
         <h1>LOGIN</h1>
+        <h6>USERNAME</h6>
         <input
-          type="text"
+          type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="username"
         />
         <p className="errorMsg">{emailError}</p>
+        <h6>PASSWORD</h6>
         <input
           type="password"
           value={password}
@@ -38,7 +41,7 @@ const Login = (props) => {
               <button id="bt" onClick={handleLogin}>
                 Sign In
               </button>
-              <p>
+              <p style={{ color: "black" }}>
                 Don't have an account ?
                 <span onClick={() => setHasAccount(!hasAccount)}>Sign up</span>
               </p>
@@ -46,11 +49,9 @@ const Login = (props) => {
           ) : (
             <>
               <button id="bt" onClick={handleSignup}>
-                {" "}
                 Sign Up
               </button>
-              <p>
-                {" "}
+              <p style={{ color: "black" }}>
                 Have an account ?
                 <span
                   onClick={() => {
@@ -64,9 +65,9 @@ const Login = (props) => {
             </>
           )}
         </div>
-        <Divider>Or Login With</Divider>
-        <div className="alt-login">
-          <div className="google"></div>
+        <div>
+          <Divider>Or</Divider>
+          <Social />
         </div>
       </div>
     </div>

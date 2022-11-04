@@ -3,6 +3,8 @@
     box-sizing: border-box;
 }
 .page{
+background: linear-gradient(to left top, #042743, grey);
+    
     height: 100vh;
         width: 100%;
         display: flex;
@@ -10,9 +12,10 @@
         align-items: center;
 }
 .cover{
-    background-color: white;
+    /* background: linear-gradient(to left top,#042743, grey); */
+    background-color: #fff;
     width: 25em;
-    height: 25em;
+    height: 29em;
     position: relative;
     border-radius: 1em;
     box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
@@ -113,11 +116,11 @@ button#bt {
     padding: 24px 0;
 }
 
-.Login .loginContainer .btnContainer p {
+ .Login .loginContainer .btnContainer #para {
     margin: 14px 0 0 0;
     text-align: right;
-    color: #fff;
-}
+    color: white;
+} 
 
 .Login .loginContainer .btnContainer p span {
     color: yellow;
